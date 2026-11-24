@@ -1,0 +1,6 @@
+{
+  "name": "LabExpress - Laboratorio Clínico a Domicilio",
+  "description": "Portal de agendamiento de exámenes clínicos a domicilio, seguimiento operativo TENS en terreno y comprobantes Webpay Plus con protocolo de ayuno.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

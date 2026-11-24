@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Atkinson Hyperlegible Next", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-clinical-bg: #f8f9fa;
+  --color-clinical-surface: #ffffff;
+  --color-clinical-navy: #003366;
+  --color-clinical-navy-deep: #001e40;
+  --color-clinical-cerulean: #2980b9;
+  --color-clinical-cerulean-deep: #006497;
+  --color-clinical-emerald: #27ae60;
+  --color-clinical-emerald-text: #196f3d;
+  --color-clinical-emerald-bg: #eaf8f0;
+  --color-clinical-coral: #e0564c;
+  --color-clinical-coral-text: #9e2b25;
+  --color-clinical-coral-bg: #fdedeb;
+  --color-clinical-ink: #142132;
+  --color-clinical-muted: #43474f;
+  --color-clinical-border: #e2e8f0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-clinical-bg);
+    color: var(--color-clinical-ink);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.clinical-card {
+  background-color: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.04);
+}
+
+.clinical-focus:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 5px #2980b9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
